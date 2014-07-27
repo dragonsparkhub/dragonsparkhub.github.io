@@ -1,0 +1,108 @@
+﻿@font-face {
+    font-family: AdventPro;
+    font-weight: normal;
+    src: url(AdventPro-Regular.ttf);
+}
+
+html, body {
+    /* layout setup */
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    /* font setup */
+    font-family: AdventPro;
+    color: rgba(255, 255, 255, 1);
+    /* background image setup */
+    z-index: 0;
+    background-image: url(../images/background_tile.png);
+}
+
+#background_dragon {
+    width: auto; height: 90%;
+    position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    z-index: 1;
+    opacity: 0.02;
+}
+
+#wrapper {
+    width: 680px; height: 600px;
+    position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;
+    margin: auto;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#header {
+    height: 180px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#logo {
+    width: 120px; height: 120px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+#logo img {
+    margin-top: 14px; margin-left: 7px;
+}
+
+#header h1 {
+    margin: 10px auto;
+    text-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+#section {
+    padding-top: 20px;
+    padding-bottom: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#footer {
+    height: 44px; width: inherit;
+    position: absolute; bottom: 0px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#footer p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
+}
+
+#header_separator {
+    height: 0px;
+    margin: 0px 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 5px 15px 1px rgba(255, 255, 255, 0.5);
+}
+
+#footer_separator {
+    height: 0px;
+    margin: 0px 90px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px -5px 15px 1px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 700px) {
+    #wrapper {
+        width: 98%;
+    }
+	#background_dragon{
+		width: 98%;
+		height: auto;
+	}
+    #header_separator{
+        margin: 0% 13%
+    }
+    #footer_separator{
+        margin: 0% 13%
+    }
+}
