@@ -94,6 +94,7 @@ html, body {
 @media screen and (max-width: 700px) {
     #wrapper {
         width: 98%;
+		position: relative;
     }
 	#background_dragon{
 		width: 98%;
